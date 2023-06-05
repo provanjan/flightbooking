@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-02-25T20:27:19.898+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/flightbooking/settings/wcm/templates/flight-booking-content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home Page"
+        jcr:uuid="dca6e266-c611-4b41-b98a-ba6a565f9822"
+        sling:resourceType="flightbooking/components/flightpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2023-02-24T02:36:41.548+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-02-24T02:37:13.035+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <responsivegrid
+                    jcr:created="{Date}2023-02-24T15:16:08.549+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-02-24T15:16:08.549+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured"/>
+                    <image
+                        jcr:created="{Date}2023-02-24T15:16:14.627+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-02-24T15:20:21.660+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="weretail/components/content/image"
+                        alt="luxury"
+                        displayPopupTitle="true"
+                        fileName="maximilien-t-scharner-QUHV_SRIGAQ-unsplash.jpg"
+                        isDecorative="false"
+                        linkURL="/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="5"/>
+                        </cq:responsive>
+                        <file/>
+                    </image>
+                    <text
+                        jcr:created="{Date}2023-02-24T15:16:27.236+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-02-24T15:25:11.726+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="weretail/components/content/text"
+                        text="&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;h2>Experience Luxury&lt;/h2>&#xd;&#xa;&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;&lt;h2>Experience Adventure&lt;/h2>&#xd;&#xa;&lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        textIsRich="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="5"/>
+                        </cq:responsive>
+                    </text>
+                </responsivegrid>
+                <text
+                    jcr:created="{Date}2023-02-24T15:26:05.080+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-02-24T15:33:17.896+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="weretail/components/content/text"
+                    text="&lt;h2>Fly To California&lt;/h2>&#xd;&#xa;&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;&lt;h2>Golden Gate Bridge&lt;/h2>&#xd;&#xa;&lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;h2>Where does it come from?&lt;/h2>&#xd;&#xa;&lt;p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &amp;quot;de Finibus Bonorum et Malorum&amp;quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &amp;quot;Lorem ipsum dolor sit amet..&amp;quot;, comes from a line in section 1.10.32.&lt;/p>&#xd;&#xa;&lt;p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from &amp;quot;de Finibus Bonorum et Malorum&amp;quot; by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.&lt;/p>&#xd;&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="6"/>
+                    </cq:responsive>
+                </text>
+                <image
+                    jcr:created="{Date}2023-02-24T15:26:15.309+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-02-24T15:30:44.585+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="weretail/components/content/image"
+                    alt="LA"
+                    displayPopupTitle="true"
+                    fileName="rezaul-karim-102abqkKhbY-unsplash.jpg"
+                    isDecorative="false">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="6"/>
+                    </cq:responsive>
+                    <file/>
+                </image>
+                <responsivegrid_1432020502
+                    jcr:created="{Date}2023-02-24T15:44:29.238+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-02-24T15:44:29.238+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured"/>
+                    <image
+                        jcr:created="{Date}2023-02-24T15:44:40.202+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-02-24T15:51:57.304+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="weretail/components/content/image"
+                        alt="Dubai"
+                        displayPopupTitle="true"
+                        fileName="wael-hneini-lMzbYcCsIpo-unsplash.jpg"
+                        isDecorative="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="6"/>
+                        </cq:responsive>
+                        <file/>
+                    </image>
+                    <text
+                        jcr:created="{Date}2023-02-24T15:45:12.955+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-02-24T15:53:59.227+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="weretail/components/content/text"
+                        text="&lt;h2>&amp;nbsp;&lt;/h2>&#xd;&#xa;&lt;h2>Fly to the Land of the Royals&lt;/h2>&#xd;&#xa;&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;&lt;h2>Dubai Skyline&lt;/h2>&#xd;&#xa;&lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p>&#xd;&#xa;&lt;h2>Burj Khalifa&lt;/h2>&#xd;&#xa;&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;h2>&amp;nbsp;&lt;/h2>&#xd;&#xa;"
+                        textIsRich="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="6"/>
+                        </cq:responsive>
+                    </text>
+                </responsivegrid_1432020502>
+            </responsivegrid>
+            <pagehero
+                jcr:lastModified="{Date}2023-02-25T10:29:06.792+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Experience Speed With Fly Asia"
+                sling:resourceType="flightbooking/components/pagehero"
+                buttonLabel="Book Now"
+                buttonLinkTo="/content/flightbooking/ca/en/home-page1"
+                fileName="nasa-Q1p7bh3SHj8-unsplash.jpg"
+                heading="We travel faster than the speed of light">
+                <file/>
+            </pagehero>
+        </root>
+    </jcr:content>
+</jcr:root>

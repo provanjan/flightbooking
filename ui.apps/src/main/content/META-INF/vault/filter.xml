@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/flightbooking/clientlibs"/>
+    <filter root="/apps/flightbooking/components"/>
+    <filter root="/apps/flightbooking/i18n"/>
+</workspaceFilter>

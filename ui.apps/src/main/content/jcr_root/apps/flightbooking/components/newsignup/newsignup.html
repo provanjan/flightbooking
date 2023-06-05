@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page in HTML with CSS Code Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Fly Asia</h1>
+		<p style="color:#0f0c6e;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Curabitur et est sed felis aliquet sollicitudin</p>
+		<span>
+			<p>login with social media</p>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+		</span>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Sign Up</h5>
+		<p>Already have an account? <a href="http://localhost:4502/content/flightbooking/language-masters/en/login-page.html">Login</a></p>
+		<div class="inputs">
+			<input type="text" id="name" placeholder="name">
+			<br>
+			<input type="email" id="emailId" placeholder="email">
+			<input type="password" id="pass" placeholder="password">
+			<input type="password"  id="confpass" placeholder="confirm password">
+		</div>
+			
+			<br>
+
+			<br>
+			<button id="getValBtnID">Sign Up</button>
+	</div>
+	
+</div>
+<!-- partial -->
+  
+</body>
+</html>
+
+
+<script>
+
+
+$("#getValBtnID").click(function () {
+        var nametxt = $("#name").val();
+        var emailtxt = $("#emailId").val();
+        var passtxt = $("#pass").val();
+        var confpasstxt=$("#confpass").val();
+
+    if(nametxt == "" || nametxt == null || emailtxt =="" || emailtxt==null || passtxt=="" || passtxt == null || confpasstxt=="" || confpasstxt == null){
+         $("#msg").css("display", "block");
+         $("#msg").css("color", "red");
+         
+
+         if(("#name").is(':empty')){
+         $("#name").append("Please add your name.");
+         } else{
+            $("#name").empty();
+         }
+
+         if(("#emailId").is(':empty')){
+         $("#emailId").append("Please add your email.");
+         } else{
+            $("#emailId").empty();
+         }
+
+         if(("#pass").is(':empty')){
+         $("#pass").append("Please add your password.");
+         } else{
+            $("#pass").empty();
+         }
+
+         if(("#confpass").is(':empty')){
+         $("#confpass").append("Please confirm your password.");
+         } else{
+            $("#confpass").empty();
+         }
+
+         if(!$("#name").val())
+           {
+            $("#name").addClass("empty");
+            return false;
+           }
+
+
+    }else{
+        $("#msg").empty();
+        var formdata = {"nametxt":nametxt,"emailtxt":emailtxt,"passtxt":passtxt,"confpasstxt":confpasstxt};
+        window.localStorage.setItem("userName",nametxt);
+        $.ajax({
+            type: "POST", url: "/bin/postservletflightbooking",
+            data: { load: JSON.stringify(formdata)},
+            cache: false,
+            success: function(data){
+                 <!--  alert("Success: "+JSON.stringify(data));-->
+				sessionStorage.setItem("status", "logged");
+				window.location.href = "http://localhost:4502/content/flightbooking/language-masters/en/profile-page.html";
+            },
+            error: function(data){
+                     <!--alert("Error: "+JSON.stringify(data));-->
+                     $("#msg").css("display", "block");
+                     $("#msg").css("color", "lightgreen");
+                     $("#msg").append("Details submitted successfully.");
+                     $("#getValBtnID").css("display", "none");
+                     sessionStorage.setItem("status", "logged");
+                     window.location.href = "http://localhost:4502/content/flightbooking/language-masters/en/profile-page.html";
+            }
+        });
+    }
+
+
+    });
+</script>
+
+
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+             data-sly-call="${clientlib.css @ categories='flightbooking.newsignup'}"/>
+        <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

@@ -1,0 +1,103 @@
+<div class="containerw3layouts-agileits">
+
+			<h2 style="color:white;">Check Flight</h2>
+
+			<div class="w3layoutscontactagileits">
+				<form action="#" method="post">
+
+
+					<div class="agileinforeturn agileinfow3ls">
+						<div class="agileinforeturn-lable wthreelable">
+							<span class="aitsreturn-lable">
+								<label>From</label>
+
+							</span>
+
+						</div>
+						<div class="agileinforeturn-input wthreeinput">
+							<input class="date agileits w3layouts hasDatepicker" id="from" type="text"  required>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+
+					<div class="agileinforeturn agileinfow3ls">
+						<div class="agileinforeturn-lable wthreelable">
+							<span class="aitsreturn-lable">
+								<label>To</label>
+
+							</span>
+
+						</div>
+						<div class="agileinforeturn-input wthreeinput">
+							<input class="date agileits w3layouts hasDatepicker" id="to" type="text"  required>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+
+					<div class="agileinfodeparture agileinfow3ls">
+						<div class="agileinfodeparture-lable wthreelable">
+							<span class="lable">
+								<label>Departure</label>
+
+							</span>
+
+						</div>
+						<div class="agileinfodeparture-input wthreeinput">
+							<input class="date agileits w3layouts hasDatepicker" id="departure" type="date" value="Date" required>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+
+					
+
+
+					<div class="aitssubmitw3ls">
+						<a id="getValBtnID" href="http://localhost:4502/content/flightbooking/language-masters/en/flight-list.html" style="color:white;font-size:20px;">Submit</a>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+
+<script>
+$("#getValBtnID").click(function () {
+        var from = $("#from").val();
+        var to = $("#to").val();
+        var departure = $("#departure").val();
+
+
+
+        window.localStorage.setItem("from",from);
+    	window.localStorage.setItem("to",to);
+    	window.localStorage.setItem("departure",departure);
+
+
+        $.ajax({
+
+            cache: false,
+            success: function(data){
+
+            },
+            error: function(data){
+
+            }
+        });
+
+
+    });
+</script>
+
+
+
+
+
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='flightbooking.checkflight'}"/>
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

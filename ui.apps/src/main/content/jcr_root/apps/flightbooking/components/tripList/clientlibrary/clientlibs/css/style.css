@@ -1,0 +1,12 @@
+.we-HeroImage {
+/* 	 */
+  margin-bottom: 40px;
+  color: #ffffff;
+  background-color: #eeeeee;
+  min-height: 460px;
+  padding: 40px 0;
+  background: #555555 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}

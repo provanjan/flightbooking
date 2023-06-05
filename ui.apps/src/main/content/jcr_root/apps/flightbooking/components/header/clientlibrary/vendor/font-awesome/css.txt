@@ -1,0 +1,2 @@
+#base=less
+font-awesome.less

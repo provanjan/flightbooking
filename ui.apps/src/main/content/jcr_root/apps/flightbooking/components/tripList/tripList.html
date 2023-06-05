@@ -1,0 +1,25 @@
+<sly data-sly-use.modelObject="com.flightbooking.core.models.TripList">
+    <sly data-sly-test.imageUpload="${'{0}{1}' @ format=[resource.path, '/file']}"/>
+    <sly data-sly-test.imagePath="${properties.fileReference || imageUpload}"/>
+
+    <!--/* If imagePath is empty, then a placeholder is shown. */-->
+    <div class="we-HeroImage width-full${!wcmmode.disabled ? ' cq-dd-image' : ''}"
+         style="${'background-image:url({0});' @ format = imagePath, context='styleString' }">
+
+
+        <h1>${modelObject.tripName}</h1>
+        <h3>Seats Available: ${modelObject.seatAvailability}</h3>
+        <h3>Description: ${modelObject.tripDescription}</h3>
+
+        <p data-sly-test="${modelObject.buttonLabel && modelObject.buttonLinkTo}">
+            <a class="btn btn-success" href="${modelObject.buttonLinkTo @ extension = 'html'}" role="button">
+                ${modelObject.buttonLabel}
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </p>
+    </div>
+</sly>
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='flightbooking.tripList'}"/>
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

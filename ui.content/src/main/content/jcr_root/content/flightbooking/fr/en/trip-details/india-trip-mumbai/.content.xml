@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-02-25T20:27:24.381+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/flightbooking/settings/wcm/templates/flight-booking-content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="India Trip Mumbai"
+        sling:resourceType="flightbooking/components/flightpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2023-02-24T02:36:41.548+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-02-24T02:37:13.035+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <tripdetail
+                    jcr:created="{Date}2023-02-25T17:33:24.932+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-02-25T17:34:41.873+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="flightbooking/components/tripdetail"
+                    flightName="Boeing 707-1A"
+                    seatAvailability="137"
+                    tripDate="10/06/2023"
+                    tripDestination="Mumbai"
+                    tripName="Doha to Mumai"
+                    tripOrigin="Doha"
+                    tripTime="10 am"/>
+            </responsivegrid>
+            <pagehero
+                jcr:created="{Date}2023-02-24T09:55:55.974+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-02-25T17:32:53.037+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Visit Mumbai"
+                sling:resourceType="flightbooking/components/pagehero"
+                buttonLabel="Book Now"
+                buttonLinkTo="/content/flightbooking/fr/en/trip-booking/qatar-mumbai"
+                fileName="florian-wehde-Do6yoytec5E-unsplash.jpg"
+                heading="Experience Bollywood with Fly Asia">
+                <file/>
+            </pagehero>
+        </root>
+    </jcr:content>
+</jcr:root>

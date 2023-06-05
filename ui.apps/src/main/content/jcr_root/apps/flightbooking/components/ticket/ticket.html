@@ -1,0 +1,92 @@
+<link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+<div class="ticket">
+	<div class="left">
+		<div class="image">
+			<p class="admit-one">
+				<span>FLY ASIA</span>
+				<span>FLY ASIA</span>
+				<span>FLY ASIA</span>
+			</p>
+			<div class="ticket-number">
+				<p id="bookingId2">
+
+				</p>
+			</div>
+		</div>
+		<div class="ticket-info">
+			<p class="date">
+				<span>Departure Date:</span>
+				<span id="date"></span>
+
+			</p>
+
+			<div class="time">
+				<p>Boarding Time<span></span> 09:00 (GMT)</p>
+				<p>Departure Time <span></span> 10:00 (GMT)</p>
+				<p >Adults:<span id="ad"></span></p>
+				<p >Children:<span id="ch"></span></p>
+			</div>
+			<p class="location"><span>Chhatrapati Shivaji Maharaj International Airport</span>
+				<span class="separator"><i class="fa fa-arrow-right" aria-hidden="true"></i></span><span>Heathrow Airport</span>
+			</p>
+		</div>
+	</div>
+	<div class="right">
+		<p class="admit-one">
+			<span>FLY ASIA</span>
+			<span>FLY ASIA</span>
+			<span>FLY ASIA</span>
+		</p>
+		<div class="right-info-container">
+			<div class="show-name">
+				<h1 id="na"></h1>
+			</div>
+
+			<div class="barcode">
+				<img src="https://external-preview.redd.it/cg8k976AV52mDvDb5jDVJABPrSZ3tpi1aXhPjgcDTbw.png?auto=webp&s=1c205ba303c1fa0370b813ea83b9e1bddb7215eb" alt="QR code">
+			</div>
+			<p>Booking Id</p>
+			<p class="ticket-number" id="bookingId">
+
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<script>
+  name=window.localStorage.getItem("cardHolderName");
+  ad=window.localStorage.getItem("adult");
+  ch=window.localStorage.getItem("child");
+  bookingId=window.localStorage.getItem("bookingId");
+  bookingId2="#"+bookingId;
+  departure=window.localStorage.getItem("departure");
+  $.ajax({
+  cache:false,
+  success:function(data){
+  $("#na").html(name);
+  $("#ad").html(ad);    
+  $("#ch").html(ch);
+  $("#bookingId").html(bookingId2);
+  $("#bookingId2").html(bookingId2);
+  $("#date").html(departure);
+  }
+  });
+
+
+
+
+</script>
+
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='flightbooking.ticket'}"/>
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

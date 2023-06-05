@@ -1,0 +1,105 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<!-- The Timeline -->
+
+<body>
+<ul class="timeline">
+
+    <!-- Item 1 -->
+    <li>
+        <div class="direction-r">
+            <div class="flag-wrapper">
+                <span class="flag">Ticket Booking</span>
+                <span class="time-wrapper"><span class="time">4/11/2023</span></span>
+            </div>
+            <div class="desc" >Congratulations! Your Ticket is confirmed.</div>
+        </div>
+    </li>
+
+    <!-- Item 2 -->
+    <li>
+        <div class="direction-l">
+            <div class="flag-wrapper">
+                <span class="flag">Check In</span>
+                <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+            </div>
+            <div class="desc" id="checkIn"></div>
+        </div>
+    </li>
+
+    <!-- Item 3 -->
+    <li>
+        <div class="direction-r">
+            <div class="flag-wrapper">
+                <span class="flag">Boarding Pass</span>
+                <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+            </div>
+            <div class="desc" id="boardingPass"></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="direction-l">
+            <div class="flag-wrapper">
+                <span class="flag">Security</span>
+                <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+            </div>
+            <div class="desc" id="security"></div>
+        </div>
+    </li>
+    <!-- Item 4 -->
+    <li>
+        <div class="direction-r">
+			<div class="flag-wrapper">
+        <span class="flag">Flight Boarding</span>
+        <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+        </div>
+        <div class="desc" id="boarded"></div>
+        </div>
+    </li>
+
+</ul>
+</body>
+
+<div style="display:flex;align-items:center;justify-content: center;">
+    <button  style="float:none;margin-right:10px;margin-bottom:10px;"><a href="http://localhost:4502/content/flightbooking/language-masters/en/home-page.html"><strong>Continue your journey</strong></a></button>
+</div>
+
+<script>
+var checkIn="Your check in is yet to be completed";
+var boardingPass="You are yet to receive your boarding pass";
+var security="You are yet to get your security check done";
+var boarding="You are yet to board the flight";
+
+var bookingStat=window.localStorage.getItem("bookingStat");
+if(bookingStat==="checkIn"){
+	checkIn="Your check in is successfully completed";
+}
+if(bookingStat==="boardingPass"){
+	boardingPass="You have received your boarding pass";
+}
+if(bookingStat==="security"){
+	security="Your security check is successfully completed";
+}
+if(bookingStat==="boarded"){
+	boarding="You have boarded the flight. Happy Journey!!";
+}
+        $.ajax({
+            cache: false,
+            success: function(data){
+				$("#checkIn").html(checkIn);
+				$("#boardingPass").html(boardingPass);
+				$("#security").html(security);
+				$("#boarded").html(boarding);
+            }
+
+        });
+
+</script>
+
+
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='flightbooking.statustracker'}"/>
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

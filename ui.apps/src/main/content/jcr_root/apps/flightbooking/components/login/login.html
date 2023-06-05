@@ -1,0 +1,67 @@
+<div class="log">
+    <h2>Welcome Back</h2>
+    <form>
+      <div class="input-cont">
+        <input type="text" placeholder="Email Id">
+        <div class="border1"></div>
+      </div>
+      <div class="input-cont">
+        <input type="password" placeholder="Password">
+        <div class="border2"></div>
+      </div>
+      <span class="check">
+        <input type="checkbox"> <label>Remember Me</label>
+      </span>
+      <a href="http://localhost:4502/content/flightbooking/language-masters/en/signup.html">Create an account<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+      <div class="clear"></div>
+
+        <input type="submit" id="getValBtnID" value="Sign In">
+      <div class="clear"></div>
+    </form>
+
+</div>
+
+
+<script>
+$("#getValBtnID").click(function () {
+        var emailtxt = $("#emailId").val();
+        var passtxt = $("#pass").val();
+
+    if(emailtxt =="" || emailtxt==null || passtxt=="" || passtxt == null){
+         $("#msg").css("display", "block");
+         $("#msg").css("color", "red");
+         if ($('#msg').is(':empty')){
+            $("#msg").append("Please add required details.");
+         } else {
+            $("#msg").empty();
+         }
+    }else{
+        $("#msg").empty();
+        var formdata = {"emailtxt":emailtxt,"passtxt":passtxt};
+        window.localStorage.setItem("userName",emailtxt);
+        $.ajax({
+            type: "POST", url: "/bin/postloginservletflightbooking",
+            data: { load: JSON.stringify(formdata)},
+            cache: false,
+            success: function(data){
+                 <!--  alert("Success: "+JSON.stringify(data));-->
+                 window.location.href="http://localhost:4502/content/flightbooking/language-masters/en/profile.html";
+            },
+            error: function(data){
+                     <!--alert("Error: "+JSON.stringify(data));-->
+                     $("#msg").css("display", "block");
+                     $("#msg").css("color", "lightgreen");
+                     $("#msg").append("Details submitted successfully.");
+                     $("#getValBtnID").css("display", "none");
+            }
+        });
+    }
+
+
+    });
+</script>
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+             data-sly-call="${clientlib.css @ categories='flightbooking.login'}"/>
+        <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

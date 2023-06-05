@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-04-05T15:28:22.947+05:30"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastRolledout="{Date}2023-04-05T15:28:22.909+05:30"
+        cq:lastRolledoutBy="translation-job-service"
+        cq:lastTranslationDone="{Date}2023-04-05T15:24:16.183+05:30"
+        cq:lastTranslationUpdate="{Date}2023-04-05T14:44:25.571+05:30"
+        cq:template="/conf/flightbooking/settings/wcm/templates/flight-booking-content-page"
+        cq:translationMethod="MACHINE_TRANSLATION"
+        cq:translationProviderCloudConfig="/libs/settings/cloudconfigs/translation/msft-translation/msft_trial"
+        cq:translationProviderName="microsoft"
+        cq:translationStatus="APPROVED"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveRelationship,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Mumbai Alaska"
+        jcr:uuid="77616d7f-39a6-4e59-85c5-15d553ba23e9"
+        sling:resourceType="flightbooking/components/flightpage">
+        <root
+            cq:lastRolledout="{Date}2023-04-05T15:28:22.912+05:30"
+            cq:lastRolledoutBy="translation-job-service"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                cq:lastRolledout="{Date}2023-04-05T15:28:22.915+05:30"
+                cq:lastRolledoutBy="translation-job-service"
+                jcr:created="{Date}2023-02-24T02:36:41.548+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-04-05T15:28:22.913+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <tripbooking
+                    cq:lastRolledout="{Date}2023-04-05T15:28:22.923+05:30"
+                    cq:lastRolledoutBy="translation-job-service"
+                    jcr:created="{Date}2023-02-25T13:56:53.858+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-04-05T15:28:22.918+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="flightbooking/components/tripBooking"
+                    buttonLabel="Book"
+                    buttonLinkTo="/content/flightbooking/language-masters/de/booking-status/success"/>
+            </responsivegrid>
+            <pagehero
+                cq:lastRolledout="{Date}2023-04-05T15:28:22.932+05:30"
+                cq:lastRolledoutBy="translation-job-service"
+                jcr:created="{Date}2023-02-24T09:55:55.974+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-04-05T15:28:22.927+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Mumbai to Alaska"
+                sling:resourceType="flightbooking/components/pagehero"
+                fileName="sid-saxena-tsXADt9ldio-unsplash.jpg">
+                <file/>
+            </pagehero>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/flightbooking" mode="merge"/>
+    <filter root="/content/flightbooking" mode="merge"/>
+    <filter root="/content/dam/flightbooking" mode="merge">
+        <exclude pattern="/content/dam/flightbooking(/.*)?"/>
+        <include pattern="/content/dam/flightbooking/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/flightbooking/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/flightbooking" mode="merge"/>
+</workspaceFilter>

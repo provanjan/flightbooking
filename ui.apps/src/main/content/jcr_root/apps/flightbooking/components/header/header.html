@@ -1,0 +1,57 @@
+<header class="site-header">
+  <div class="site-identity">
+    <h1 id="logo"><a href="http://localhost:4502/content/flightbooking/language-masters/en/home-page1.html">Fly Asia</a></h1>
+  </div>  
+  <nav class="site-navigation">
+    <ul class="nav">
+      <li><a href="#">About</a></li> 
+      <li><a href="#">News</a></li> 
+      <li><a href="#">Contact</a></li>
+	  <li>
+        <div class="search-box">
+          <button class="btn-search" id="search"><i class="fa fa-search"></i></button>
+          <input type="text" class="input-search" id="searchText" placeholder="Type to Search...">
+        </div>
+        <div>
+         <ul id="pageslist"></ul>
+        </div>
+      </li> 
+    </ul>
+  </nav>
+</header>
+
+
+<script>
+
+$("#search").click(function () {
+var item = $( "#searchText" ).val();
+item="?param="+item;
+$.ajax({
+type: "GET", url: "/content/flightbooking/language-masters/en/jcr:content.search.txt"+item,
+cache: false,
+asycn:false,
+success: function(data){
+var tags=data.split("|");
+if(tags.length>0)
+{
+var options='';
+for(var j = 0;j<tags.length-1;j++)
+{
+var i=tags[j].split(" ");
+options += '<li><a href="http://localhost:4502' + i[1] + '.html">' + i[0] + '</a></li>';
+$("#pageslist").html(options);
+}
+}
+$("#pagelist").html("No results found");
+},
+error: function(data){
+alert("Error: "+data);
+}
+});
+});
+</script>
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='flightbooking.base'}"/>
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

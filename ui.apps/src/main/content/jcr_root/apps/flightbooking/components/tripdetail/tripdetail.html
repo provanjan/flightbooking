@@ -1,0 +1,68 @@
+<sly data-sly-use.modelObject="com.flightbooking.core.models.TripDetail">
+    <div data-sly-test.empty="${wcmmode.edit && !modelObject.name}" class="cq-placeholder"
+         data-emptytext="${component.title}"></div>
+    <div class="container">
+        <div class="card">
+            <div class="title">
+                <h1 data-sly-test="${modelObject.tripName}">
+                    ${modelObject.tripName}
+                </h1>
+
+                <h2 data-sly-test="${modelObject.flightName}">
+                    <i class="fa fa-plane"></i>
+                    ${modelObject.flightName}</h2>
+
+                <div class="social">
+
+                    <h2 data-sly-test="${modelObject.tripDate}">
+                        <i class="fa fa-calendar-plus-o"></i>
+                        Trip Date:${modelObject.tripDate}</h2>
+                </div>
+
+
+                <div class="social">
+
+                    <h2 data-sly-test="${modelObject.tripTime}">
+                        <i class="fa fa-clock-o"></i>
+                        Trip Time:${modelObject.tripTime}</h2>
+                </div>
+
+
+                <div class="social">
+
+                    <h2 data-sly-test="${modelObject.tripDestination}">
+                        <i class="fa fa-globe"></i>
+                        Destination:${modelObject.tripDestination}</h2>
+                </div>
+
+
+
+                <div class="social">
+
+                    <h2 data-sly-test="${modelObject.tripOrigin}">
+                        <i class="fa fa-map-marker"></i>
+                        Origin:${modelObject.tripOrigin}</h2>
+                </div>
+
+                <div class="social">
+
+                    <h2 data-sly-test="${modelObject.seatAvailability}">
+                        <i class="fa fa-address-book"></i>
+                        Seats Available:${modelObject.seatAvailability}</h2>
+                </div>
+
+                <div class="social">
+
+                    <h2 data-sly-test="${modelObject.price}">
+                        <i class="fa fa-money"></i>
+                        Price: Rs.${modelObject.price}</h2>
+                </div>
+            </div>
+</sly>
+
+
+
+
+        <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+             data-sly-call="${clientlib.css @ categories='flightbooking.tripdetail'}"/>
+        <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

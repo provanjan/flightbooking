@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-02-25T20:27:28.449+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[flightbooking:kolkata-to-alaska,flightbooking:delhi-to-florida]"
+        cq:template="/conf/flightbooking/settings/wcm/templates/flight-booking-content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="US Trip Alaska"
+        sling:resourceType="flightbooking/components/flightpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2023-02-24T02:36:41.548+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-02-24T02:37:13.035+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <tripdetail
+                    jcr:created="{Date}2023-02-25T16:25:04.006+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-02-25T17:36:30.333+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="flightbooking/components/tripdetail"
+                    flightName="Boeing 707-1A"
+                    seatAvailability="120"
+                    tripDate="10/06/2023"
+                    tripDestination="Alaska"
+                    tripName="Mumbai to Alaska"
+                    tripOrigin="Mumbai"
+                    tripTime="10 am"/>
+            </responsivegrid>
+            <pagehero
+                jcr:created="{Date}2023-02-24T09:55:55.974+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-02-25T17:36:54.387+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Visit Alaska"
+                sling:resourceType="flightbooking/components/pagehero"
+                buttonLabel="Book Now"
+                buttonLinkTo="/content/flightbooking/ch/en/trip-booking/mumbai-alaska"
+                fileName="mckayla-crump-3OR-XFzKSBo-unsplash.jpg"
+                heading="Visit the mighty Alaskan mountains">
+                <file/>
+            </pagehero>
+        </root>
+    </jcr:content>
+</jcr:root>

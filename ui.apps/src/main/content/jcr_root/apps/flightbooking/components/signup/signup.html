@@ -1,0 +1,71 @@
+<div class="log">
+    <h2>Create an Account</h2>
+    <form>
+      <span id="msg"></span>
+      <div class="input-cont">
+        <input type="text" id="name" placeholder="Name">
+        <div class="border1"></div>
+      </div>
+      <div class="input-cont">
+        <input type="email" id="emailId" placeholder="Email Id">
+        <div class="border1"></div>
+      </div>
+      <div class="input-cont">
+        <input type="password" id="pass" placeholder="Password">
+        <div class="border2"></div>
+      </div>
+      <div class="input-cont">
+        <input type="password" id="confpass" placeholder="Confirm Password">
+        <div class="border2"></div>
+      </div>
+      <a href="http://localhost:4502/content/flightbooking/language-masters/en/login.html">Already have an account?<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+      <div class="clear"></div>
+      <a href="http://localhost:4502/content/flightbooking/language-masters/en/profile.html" ><strong id="getValBtnID" class="sign">Sign Up</strong></a>
+      <div class="clear"></div>
+    </form>
+</div>
+<script>
+$("#getValBtnID").click(function () {
+        var nametxt = $("#name").val();
+        var emailtxt = $("#emailId").val();
+        var passtxt = $("#pass").val();
+        var confpasstxt=$("#confpass").val();
+
+    if(nametxt == "" || nametxt == null || emailtxt =="" || emailtxt==null || passtxt=="" || passtxt == null || confpasstxt=="" || confpasstxt == null){
+         $("#msg").css("display", "block");
+         $("#msg").css("color", "red");
+         if ($('#msg').is(':empty')){
+            $("#msg").append("Please add required details.");
+         } else {
+            $("#msg").empty();
+         }
+    }else{
+        $("#msg").empty();
+        var formdata = {"nametxt":nametxt,"emailtxt":emailtxt,"passtxt":passtxt,"confpasstxt":confpasstxt};
+        window.localStorage.setItem("userName",nametxt);
+        $.ajax({
+            type: "POST", url: "/bin/postservletflightbooking",
+            data: { load: JSON.stringify(formdata)},
+            cache: false,
+            success: function(data){
+                 <!--  alert("Success: "+JSON.stringify(data));-->
+
+            },
+            error: function(data){
+                     <!--alert("Error: "+JSON.stringify(data));-->
+                     $("#msg").css("display", "block");
+                     $("#msg").css("color", "lightgreen");
+                     $("#msg").append("Details submitted successfully.");
+                     $("#getValBtnID").css("display", "none");
+            }
+        });
+    }
+
+
+    });
+</script>
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+             data-sly-call="${clientlib.css @ categories='flightbooking.signup'}"/>
+        <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

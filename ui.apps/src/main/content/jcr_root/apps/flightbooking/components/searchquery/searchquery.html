@@ -1,0 +1,49 @@
+
+
+
+
+    <div data-sly-test.empty="${wcmmode.edit}" class="cq-placeholder"
+         data-emptytext="${component.title}"></div>
+    <body>
+
+    <div class="search">
+        <div class="searchb" >
+            <input type="text" id="searchText" name="searchText" placeholder="search for something..">
+            <button type="button" id="seacrh"> Search </button></div>
+    </div>
+    <div>
+        <ul id="pageslist"></ul>
+    </div>
+
+    </body>
+
+    <script>
+
+$("#seacrh").click(function () {
+var item = $( "#searchText" ).val();
+item="?param="+item;
+$.ajax({
+type: "GET", url: "/content/flightbooking/language-masters/en/jcr:content.search.txt"+item,
+cache: false,
+asycn:false,
+success: function(data){
+var tags=data.split("|");
+if(tags.length>0)
+{
+var options='';
+for(var j = 0;j<tags.length-1;j++)
+{
+var i=tags[j].split(" ");
+options += '<li><a href="http://localhost:4502' + i[1] + '.html">' + i[0] + '</a></li>';
+$("#pageslist").html(options);
+}
+}
+$("#pagelist").html("No results found");
+},
+error: function(data){
+alert("Error: "+data);
+}
+});
+});
+</script>
+</sly>

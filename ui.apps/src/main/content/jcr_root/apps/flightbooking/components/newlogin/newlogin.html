@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page in HTML with CSS Code Example</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+			<h1>Fly Asia</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Curabitur et est sed felis aliquet sollicitudin</p>
+			<span>
+			<p>login with social media</p>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+		</span>
+		</div>
+	</div>
+
+
+	<div class="right">
+		<h5>Login</h5>
+		<p>Don't have an account? <a href="http://localhost:4502/content/flightbooking/language-masters/en/signup-page.html">Creat Your Account</a> it takes less than a minute</p>
+		<div class="inputs">
+			<input type="text" id="userId" placeholder="user id">
+			<br>
+			<input type="password" id="userpass" placeholder="password">
+		</div>
+
+		<br>
+
+		<br>
+		<button id="getValBtnID">Login</button>
+	</div>
+
+</div>
+<!-- partial -->
+
+
+
+<script>
+$("#getValBtnID").click(function () {
+        var id = $("#userId").val();
+        var password = $("#userpass").val();
+        var formdata = {"userId":id,"password":password};
+
+        $.ajax({
+            type: "POST", url: "/bin/postloginservletflightbooking",
+            data: { load: JSON.stringify(formdata) },
+            cache: false,
+            success: function(data){
+					if(data.responseText.indexOf("UserId or password did not match") !== -1){
+                     alert("Enter the correct user details");
+                     location.reload();}
+                     else
+                     {
+                    	
+
+                            sessionStorage.setItem("status", "logged");
+							window.localStorage.setItem("userName",id);
+
+                            if(sessionStorage.getItem("bookingStatus")==="true"){
+								window.location.href = "http://localhost:4502/content/flightbooking/language-masters/en/booking.html";
+                                }
+                                else{
+                 					window.location.href = "http://localhost:4502/content/flightbooking/language-masters/en/profile-page.html";
+                                }
+                     }
+            },
+            error: function(data){
+					if(data.responseText.indexOf("UserId or password did not match") !== -1){
+                     alert("Enter the correct user details");
+                     location.reload();}
+                     else
+                     {
+
+                            sessionStorage.setItem("status", "logged");
+							window.localStorage.setItem("userName",id);
+
+
+                            if(sessionStorage.getItem("bookingStatus")==="true"){
+								window.location.href = "http://localhost:4502/content/flightbooking/language-masters/en/booking.html";
+                                }
+                                else{
+                 					window.location.href = "http://localhost:4502/content/flightbooking/language-masters/en/profile-page.html";
+                                }
+                     }
+            }
+        });
+    });
+</script>
+
+
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+	 data-sly-call="${clientlib.css @ categories='flightbooking.newlogin'}"/>
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

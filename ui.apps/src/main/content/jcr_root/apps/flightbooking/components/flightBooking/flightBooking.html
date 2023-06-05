@@ -1,0 +1,24 @@
+<div class="form-style-5">
+<form>
+<fieldset>
+<legend><span class="number">1</span>Boarding Details</legend>
+<input type="text" name="field1" placeholder="From *">
+<input type="date" name="field2" placeholder="Boarding date *">
+<input type="time" name="field3" placeholder="Boarding time *">
+
+<legend><span class="number">2</span>Destination</legend>
+<input type="text" name="field4" placeholder="To *">
+
+<p data-sly-test="${properties.buttonLabel && properties.buttonLinkTo}">
+                <a class="btn btn-success" href="${properties.buttonLinkTo @ extension = 'html'}" role="button">
+                    ${properties.buttonLabel}
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+         </p>
+</form>
+</div>
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='flightbooking.tripbooking'}"/>
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

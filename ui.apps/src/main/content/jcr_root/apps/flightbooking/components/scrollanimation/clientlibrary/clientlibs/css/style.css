@@ -1,0 +1,331 @@
+.service-grid {
+    background: #fcfcfc;
+}
+    .service-title h4 {
+    position: relative;
+    display: inline-block;
+}
+.service-icon {
+    position: relative;
+}
+.service-title p {
+    padding: 0 190px;
+    margin-bottom: 10px;
+}
+.about-info-text h2 {
+    margin-bottom: 23px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: .9;
+}
+.about-info-text p {
+    padding: 0 100px;
+    font-size: 18px;
+    margin-bottom: 26px;
+      position: relative;
+}
+.about-content p {
+    margin-bottom: 0;
+}
+.about-info-text a {
+    margin-bottom: 20px;
+      position: relative;
+}
+.service-icon i {
+    font-size: 40px;
+    color: #e8bc00;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.service-wrap {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+}
+
+.service-wrap p{
+      position: relative;
+}
+
+.service-wrap:hover {
+    background-image: url(https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG91dGRvb3J8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+}
+
+
+
+.service-wrap:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+}
+
+.service-wrap:hover h4,.service-wrap:hover p{
+    color: #fff;
+}
+.service-wrap h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+}
+.service-wrap a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+
+}
+
+
+.service-wrap1 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+}
+
+.service-wrap1 p{
+      position: relative;
+}
+
+
+.service-wrap1:hover {
+    background-image: url(https://images.unsplash.com/photo-1542176281-363d7e8c1c04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fG91dGRvb3J8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+}
+
+.service-wrap1:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+}
+
+.service-wrap1:hover h4,.service-wrap1:hover p{
+    color: #fff;
+}
+.service-wrap1 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+}
+.service-wrap1 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+
+}
+
+
+.service-wrap2 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+}
+
+.service-wrap2 p{
+      position: relative;
+}
+
+
+.service-wrap2:hover {
+    background-image: url(https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyZWVjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+}
+
+.service-wrap2:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+}
+
+.service-wrap2:hover h4,.service-wrap2:hover p{
+    color: #fff;
+}
+.service-wrap2 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+}
+.service-wrap2 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+
+}
+
+
+.service-wrap3 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+}
+
+.service-wrap3 p{
+      position: relative;
+}
+
+
+.service-wrap3:hover {
+    background-image: url(https://images.unsplash.com/photo-1512632578888-169bbbc64f33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWJ1JTIwZGhhYml8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+}
+
+.service-wrap3:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+}
+
+.service-wrap3:hover h4,.service-wrap3:hover p{
+    color: #fff;
+}
+.service-wrap3 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+}
+.service-wrap3 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+
+}
+
+.service-wrap4 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+}
+
+.service-wrap4 p{
+      position: relative;
+}
+
+
+.service-wrap4:hover {
+    background-image: url(https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3dpdHplcmxhbmR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+}
+
+.service-wrap4:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+}
+
+.service-wrap4:hover h4,.service-wrap4:hover p{
+    color: #fff;
+}
+.service-wrap4 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+}
+.service-wrap4 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+
+}
+
+
+.service-wrap5 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+}
+
+.service-wrap5 p{
+      position: relative;
+}
+
+
+.service-wrap5:hover {
+    background-image: url(https://images.unsplash.com/photo-1576413326475-ea6c788332fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW9zY293fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+}
+
+.service-wrap5:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+}
+
+.service-wrap5:hover h4,.service-wrap5:hover p{
+    color: #fff;
+}
+.service-wrap5 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+}
+.service-wrap5 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+
+}                                                                                                                        

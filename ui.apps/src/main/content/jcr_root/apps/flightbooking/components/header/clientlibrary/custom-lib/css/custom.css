@@ -1,0 +1,7 @@
+
+.contentfragment h1 {
+	color:blue ;
+}
+.contentfragment p > i{
+	color: red;
+}

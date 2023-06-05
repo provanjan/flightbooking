@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastReplicated="{Date}2023-03-08T15:41:28.970+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/flightbooking/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:uuid="d891d56f-414a-4780-bb05-fef0b5158be9"
+        sling:resourceType="flightbooking/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="flightbooking/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="flightbooking/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/flightbooking/us/en/site/header/master"/>
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="flightbooking/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="flightbooking/components/title"
+                    editable="{Boolean}true"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="flightbooking/components/container"
+                    editable="{Boolean}true"
+                    layout="responsiveGrid"/>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="flightbooking/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/flightbooking/us/en/site/footer/master"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-04-11T11:46:23.770+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/flightbooking/settings/wcm/templates/home-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Booking Statistics"
+        sling:resourceType="flightbooking/components/flightpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2023-03-30T12:59:04.754+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-03-31T16:09:49.563+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <statustracker
+                    jcr:created="{Date}2023-04-11T10:51:41.179+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-04-11T10:51:41.179+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="flightbooking/components/statustracker"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

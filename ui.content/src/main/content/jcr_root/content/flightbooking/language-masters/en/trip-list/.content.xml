@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-03-22T21:43:42.652+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2023-03-08T15:43:03.561+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/flightbooking/settings/wcm/templates/flight-booking-content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Trip List"
+        jcr:uuid="f212bf64-4da6-43ed-8c0b-4d26ac7106db"
+        sling:resourceType="flightbooking/components/flightpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2023-02-24T02:36:41.548+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-02-24T02:37:13.035+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <responsivegrid
+                    jcr:created="{Date}2023-02-25T19:31:04.670+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-02-25T19:31:04.670+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured"/>
+                    <triplist
+                        jcr:created="{Date}2023-02-25T19:31:18.779+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Book Your Flights to Alaska&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2023-02-27T09:04:16.686+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Explore Alaska"
+                        sling:resourceType="flightbooking/components/triplist"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/flightbooking/language-masters/en/trip-details/us-trip-alaska"
+                                text="Book Now"/>
+                        </actions>
+                    </triplist>
+                    <triplist_909546739
+                        jcr:created="{Date}2023-02-25T19:31:37.271+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Plan your trips to Florida&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2023-02-25T20:09:32.142+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Visit Florida"
+                        sling:resourceType="flightbooking/components/triplist"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/core-components-examples/library/sample-assets/snowy-mountain-glacier.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/flightbooking/language-masters/en/trip-details/us-trip-florida"
+                                text="Florida Calling"/>
+                        </actions>
+                    </triplist_909546739>
+                    <triplist_183614813
+                        jcr:created="{Date}2023-02-25T19:32:03.799+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Visit Tokyo with us&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2023-02-25T20:12:15.501+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Explore Tokyo"
+                        sling:resourceType="flightbooking/components/triplist"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/we-retail/en/activities/climbing/kalymnos-island-female.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/flightbooking/language-masters/en/trip-details/australia-trip-tokyo"
+                                text="Tokyo Calling"/>
+                        </actions>
+                    </triplist_183614813>
+                    <trip
+                        jcr:created="{Date}2023-03-16T13:03:48.947+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-03-22T20:35:15.167+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="flightbooking/components/trip"
+                        actionsEnabled="false"
+                        buttonLabel="Check Details"
+                        buttonLinkTo="/content/flightbooking/language-masters/en/trip-details/us-trip-alaska"
+                        descriptionFromPage="false"
+                        fileName="kayti-coonjohn-y8f8Zq5a_iY-unsplash.jpg"
+                        textIsRich="true"
+                        titleFromPage="false"
+                        tripDescription="Visit the mighty Alaskan Mountains. Fly with us to your dream destination and reach the peaks of mountains"
+                        tripName="Alaska Trip">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <file/>
+                    </trip>
+                    <trip_1812910853
+                        jcr:created="{Date}2023-03-16T14:27:03.319+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-03-22T20:36:26.642+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="flightbooking/components/trip"
+                        actionsEnabled="false"
+                        buttonLabel="Check Details"
+                        buttonLinkTo="/content/flightbooking/language-masters/en/trip-details/australia-trip-tokyo"
+                        descriptionFromPage="false"
+                        fileName="takashi-miyazaki-64ajtpEzlYc-unsplash.jpg"
+                        textIsRich="true"
+                        titleFromPage="false"
+                        tripDescription="Visit Tokyo. Fly us to the land of Tokyo where volcanoes erupt as much as the technology does in Japan"
+                        tripName="Tokyo Trip">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <file/>
+                    </trip_1812910853>
+                    <trip_1300726946
+                        jcr:created="{Date}2023-03-16T14:27:49.422+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-03-22T20:52:39.334+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="flightbooking/components/trip"
+                        actionsEnabled="false"
+                        buttonLabel="Check Details"
+                        buttonLinkTo="/content/flightbooking/language-masters/en/trip-details/india-trip-mumbai"
+                        descriptionFromPage="false"
+                        fileName="tobias-pfeifer-FBFPxrsbkv0-unsplash.jpg"
+                        textIsRich="true"
+                        titleFromPage="false"
+                        tripDescription="Visit Mumbai. Explore the bollywood paparazzi with lots of glitz of glam along with heritage buildings of Mumbai"
+                        tripName="Mumbai Trip">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <file/>
+                    </trip_1300726946>
+                    <trip_2051780555
+                        jcr:created="{Date}2023-03-16T14:35:39.398+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-03-22T21:43:42.634+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="flightbooking/components/trip"
+                        actionsEnabled="false"
+                        buttonLabel="Check Details"
+                        buttonLinkTo="/content/flightbooking/language-masters/en/trip-details/us-trip-florida"
+                        descriptionFromPage="false"
+                        fileName="autumn-kuney-jSi8CIx1XiI-unsplash.jpg"
+                        flightName="Florida Trip"
+                        textIsRich="true"
+                        titleFromPage="false"
+                        tripDescription="Visit Florida. Relax in the white sand beaches of Florida and recluse into the world of oblivion"
+                        tripName="Florida Trip">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <file/>
+                    </trip_2051780555>
+                    <trip_738915276
+                        jcr:created="{Date}2023-03-16T14:35:59.017+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-03-22T21:37:21.165+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="flightbooking/components/trip"
+                        actionsEnabled="false"
+                        buttonLabel="Check Details"
+                        buttonLinkTo="/content/flightbooking/language-masters/en/trip-details/india-trip-delhi"
+                        descriptionFromPage="false"
+                        fileName="ravi-sharma-JnxS4mGEAn8-unsplash.jpg"
+                        textIsRich="true"
+                        titleFromPage="false"
+                        tripDescription="Visit Delhi. The capital of India , explore diversity not just in people but also in the cuisine."
+                        tripName="Delhi Trip">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <file/>
+                    </trip_738915276>
+                    <trip_585147241
+                        jcr:created="{Date}2023-03-16T14:36:14.714+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-03-22T21:42:38.578+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="flightbooking/components/trip"
+                        actionsEnabled="false"
+                        buttonLabel="Check Details"
+                        buttonLinkTo="/content/flightbooking/language-masters/en/trip-details/india-trip-kolkata"
+                        descriptionFromPage="false"
+                        fileName="subhro-vision-ty3OJABYw1w-unsplash.jpg"
+                        textIsRich="true"
+                        titleFromPage="false"
+                        tripDescription="Explore the land of joy, Once the capital of India now the food capital of India. One would not regret a food walk in Kolkata"
+                        tripName="Kolkata Trip">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <file/>
+                    </trip_585147241>
+                </responsivegrid>
+                <responsivegrid_1409130798
+                    jcr:created="{Date}2023-03-08T20:45:47.099+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-03-08T20:45:47.099+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured"/>
+                    <title
+                        jcr:created="{Date}2023-03-08T20:45:55.579+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-03-08T20:47:09.830+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Could not find your destination ?"
+                        sling:resourceType="weretail/components/content/title"
+                        type="h1"/>
+                    <button
+                        jcr:created="{Date}2023-03-08T20:46:11.470+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-03-08T21:07:06.664+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="weretail/components/content/button"
+                        label="Check More"
+                        linkTo="/content/flightbooking/language-masters/en/flightbooking"/>
+                </responsivegrid_1409130798>
+                <separator
+                    jcr:created="{Date}2023-03-16T22:08:17.260+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-03-16T22:08:17.260+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="flightbooking/components/separator"/>
+                <testimonial
+                    jcr:created="{Date}2023-03-16T22:31:59.931+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-03-16T22:31:59.931+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="flightbooking/components/testimonial">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="10"/>
+                    </cq:responsive>
+                </testimonial>
+            </responsivegrid>
+            <pagehero
+                jcr:created="{Date}2023-02-24T09:55:55.974+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-03-16T14:35:00.363+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Fly the distance with Fly Asia"
+                sling:resourceType="flightbooking/components/pagehero"
+                fileName="ashim-d-silva-pGcqw1ARGyg-unsplash.jpg"
+                heading="Choose your dream destination">
+                <file/>
+            </pagehero>
+        </root>
+    </jcr:content>
+</jcr:root>

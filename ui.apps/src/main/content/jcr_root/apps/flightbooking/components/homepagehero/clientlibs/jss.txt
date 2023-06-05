@@ -1,0 +1,2 @@
+#base=jss
+js/pagehero.js
